@@ -1,0 +1,60 @@
+/* Hero Section */
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+    background-color: var(
+        --color-surface
+    ); /* Dark surface color for hero background */
+    border-bottom: 1px solid var(--color-border);
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 800; /* Extra bold for impact */
+    margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaButton {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text-button);
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+}
+
+.featuresTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}

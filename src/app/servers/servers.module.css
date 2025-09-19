@@ -1,0 +1,21 @@
+.pageHeader {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.pageHeader h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+.serversGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-bottom: 5rem;
+}

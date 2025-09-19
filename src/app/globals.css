@@ -1,26 +1,64 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+    /* Clean Dark Theme Palette */
+    --color-primary: #b22d00;
+    --color-primary-dark: #d9481f; /* A brighter red for hover on dark bg */
+    --color-primary-light: #ff4500; /* Lighter red for accents */
+    --color-background: #1a202c; /* Very dark blue/gray */
+    --color-surface: #2d3748; /* Lighter surface color for cards */
+    --color-surface-hover: #374151; /* Hover state for surfaces */
+    --color-text: #e2e8f0; /* Light gray for text */
+    --color-text-light: #a0aec0; /* Lighter gray for subtitles */
+    --color-text-muted: #718096; /* More muted text for less important content */
+    --color-text-button: #ffffff; /* White text for buttons */
+    --color-border: #4a5568; /* Darker gray for borders */
+    --color-border-light: #5a6573; /* Slightly lighter border for hover states */
+    --color-success: #48bb78; /* Green for success states */
+    --color-warning: #ed8936; /* Orange for warning states */
+    --color-error: #f56565; /* Red for error states */
+    --color-info: #4299e1; /* Blue for info states */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+    /* Shadow colors for dark theme */
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --shadow-color-light: rgba(0, 0, 0, 0.2);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    /* Font variable is now defined in layout.tsx */
+    --font-family-sans:
+        var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+    font-family: var(--font-family-sans);
+    font-weight: 700; /* Bolder headings */
+    /* Removed text-transform: uppercase */
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+* {
+    box-sizing: border-box;
 }
