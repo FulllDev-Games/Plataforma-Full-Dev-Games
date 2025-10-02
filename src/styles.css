@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
+    padding: 0rem;
+    margin: 0rem;
+    
     background-color: #111111;
     color: #D6D6D6;
 
