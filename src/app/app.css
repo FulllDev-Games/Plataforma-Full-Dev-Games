@@ -1,7 +1,7 @@
 main {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -16,5 +16,5 @@ section {
 
 aside {
     background-color: #070707;
-    width: 22%;
+    width: 18%;
 }
