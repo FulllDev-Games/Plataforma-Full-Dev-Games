@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  SOMENTE PARA TESTE */
+
+section {
+    background-color: #1F1F1F;
+
+    width: 50%;
+    height: 100%;
+}
+
+aside {
+    background-color: #070707;
+    width: 22%;
+}
