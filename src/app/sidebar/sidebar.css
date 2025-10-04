@@ -84,7 +84,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
 
-    margin: 20px;
+    margin: 24px;
     padding: 20px;
     border-radius: 4px;
     border: 1px solid #1C1C1C;
@@ -118,4 +118,70 @@ p {
     height: 38%;
     width: 38%;
     object-fit: contain;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 35px;
+    padding-block: 15px;
+
+    border-top: 1px solid #1C1C1C;
+    border-bottom: 1px solid #1C1C1C;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+    font-weight: lighter;
+}
+
+.player-info img {
+    border-radius: 5px;
+}
+
+.player-bagde {
+    font-family: 'Minecraft', sans-serif;
+    color: #696969;
+    font-size: 14px;
+    text-align: center;
+
+    border: 2px solid #1C1C1C;
+
+    padding: 4px 6px 2px 7px;
+}
+
+.show-more {
+    display: flex;
+    justify-content: space-between;
+
+    padding-inline: 35px;
+    padding-block: 15px;
+
+    border-top: 1px solid #1C1C1C;
+}
+
+.show-more p {
+    font-size: 14px;
+}
+
+.show-more button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+    border: 2px solid #1C1C1C;
+    border-radius: 50%;
+
+    cursor: pointer;
 }
