@@ -1,3 +1,7 @@
+.main-div {
+    margin-bottom: 5rem;
+}
+
 p {
     margin: 0px;
     padding: 0px;
@@ -120,10 +124,10 @@ p {
     object-fit: contain;
 }
 
-.player {
+.player,
+.socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 
     padding-inline: 35px;
@@ -131,6 +135,24 @@ p {
 
     border-top: 1px solid #1C1C1C;
     border-bottom: 1px solid #1C1C1C;
+}
+
+.player {
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+
+    text-decoration: none;
+    color: #A0A0A0;
+
+    gap: 15px;
+}
+
+.socials {
+    font-size: 14px;
 }
 
 .player-info {
@@ -165,6 +187,8 @@ p {
     padding-block: 15px;
 
     border-top: 1px solid #1C1C1C;
+
+    color: #A0A0A0;
 }
 
 .show-more p {
