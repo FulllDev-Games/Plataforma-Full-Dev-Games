@@ -1,12 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
+/* Imagem do Banner */
 .hero-header{
     position:relative;
     height: 380px; 
@@ -14,21 +6,9 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* Overlay escuro para a imagem */
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        /* background: rgba(0, 0, 0, 0.5); Ajuste a opacidade do escurecimento */
-        z-index: 1;
-    }
+    z-index: 1;
 }
  
-
 /* Estilização Nav Bar */
 .nav{
     position: relative;
