@@ -1,16 +1,14 @@
-<body>
+
     <header class="hero-header">
         <!-- Nav Bar -->
         <nav class="nav">
             <div class="nav__container">
                 <div class="nav__menu">
-                    <a href="#" class="nav__item">Início</a>
-                    <a href="#" class="nav__item">Minecraft</a>
-                    <a href="#" class="nav__item">Ranking</a>
-                    <a href="#" class="nav__item">Loja</a>
-                    <a href="#" class="nav__item">Sobre</a>
-                    <a href="#" class="nav__item">Suporte</a>
-                
+                    <a *ngFor="let item of menuItems" class="nav__item"
+                    [class.nav__item--active]="item.active"
+                    (click)="activateItem(item)">
+                        {{item.label}}
+                    </a>
                 </div>
                 <div class="nav__button">
                     <a href="#" class="nav__cta">Registra-se</a>
@@ -45,4 +43,3 @@
             </div>
         </div>
     </header>
-</body>
