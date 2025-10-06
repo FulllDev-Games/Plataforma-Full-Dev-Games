@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.css'
 })
 export class Header {
-  // Array com os itens do menu - substitui os links estáticos
+  // Array com os itens do menu de navegação
   menuItems = [
-    { label: 'Início', active: true },
+    { label: 'Início', active: true }, // Item inicial ativo por padrão
     { label: 'Minecraft', active: false },
     { label: 'Ranking', active: false },
     { label: 'Loja', active: false },
@@ -18,14 +18,12 @@ export class Header {
     { label: 'Suporte', active: false }
   ];
 
-  // Função para ativar o item clicado
   activateItem(selectedItem: any): void {
-    // Remove a classe ativa de todos os itens
-    this.menuItems.forEach(item => {
-      item.active = false;
-    });
-    
-    // Ativa apenas o item clicado
-    selectedItem.active = true;
+    // Cria um novo array para forçar a detecção de mudanças do Angular
+    // Ativa apenas o item clicado, desativando todos os outros
+    this.menuItems = this.menuItems.map(item => ({
+      ...item,
+      active: item === selectedItem
+    }));
   }
 }
