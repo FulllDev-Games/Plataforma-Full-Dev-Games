@@ -2,6 +2,7 @@
 .hero-header{
     position:relative;
     height: 380px; 
+    width: 100vw;
     background-image: url('../../assets/img/header-completa.png');
     background-size: cover;
     background-position: center;
