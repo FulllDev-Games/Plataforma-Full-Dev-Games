@@ -1,0 +1,26 @@
+section {
+    margin: 20px;
+    background-color: #1C1C1C;
+
+    border: 2px solid #1F1F1F;
+    border-radius: 4px;
+}
+
+header {
+    border-radius: 4px 4px 0px 0px;
+    background-color: #111111;
+}
+
+h1, p {
+    margin-inline: 15px;
+    color: #989898;
+    font-size: 14px;
+}
+
+header>h1 {
+    margin-block: 0px;
+
+    padding-block: 15px;
+
+    font-weight: 500;
+}
