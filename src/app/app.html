@@ -1,18 +1,17 @@
-<style>
-
-</style>
-
 <main>
-  
+
   <app-header></app-header>
 
   <div id="main-content">
-    <section>
-      <p>teste</p>
+
+    <section id="section">
+      <router-outlet></router-outlet>
     </section>
+
     <aside>
       <app-sidebar></app-sidebar>
     </aside>
+
   </div>
 
 </main>
@@ -20,6 +19,3 @@
 <footer>
   <app-footer></app-footer>
 </footer>
-
-
-<router-outlet />
