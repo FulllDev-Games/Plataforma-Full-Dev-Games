@@ -11,7 +11,11 @@ header {
     background-color: #111111;
 }
 
-h1, p {
+p {
+    line-height: 1.2rem;
+}
+
+h1, p, li {
     margin-inline: 15px;
     color: #989898;
     font-size: 14px;
@@ -23,4 +27,17 @@ header>h1 {
     padding-block: 15px;
 
     font-weight: 500;
+}
+
+.ul-title {
+    margin-bottom: 1px;
+    color: #E9E9E9;
+}
+
+.text > ul {
+    margin-top: 5px;
+}
+
+.text > ul > li {
+    margin: 3px;
 }
