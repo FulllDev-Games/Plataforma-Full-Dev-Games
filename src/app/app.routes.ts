@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Main } from './main/main';
 import { About } from './about/about';
+import { Support } from './support/support';
 
 export const routes: Routes = [
   {
@@ -10,17 +11,9 @@ export const routes: Routes = [
   {
     path: "sobre",
     component: About
+  },
+  {
+    path: "support",
+    component: Support
   }
-import { Support } from './support/support';
-import { Main } from './main/main';
-
-export const routes: Routes = [
-    {
-        path: "",
-        component: Main
-    },
-    {
-        path: "support",
-        component: Support
-    }
 ];
