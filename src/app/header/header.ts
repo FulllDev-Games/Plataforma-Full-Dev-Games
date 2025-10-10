@@ -16,7 +16,7 @@ export class Header {
     { label: 'Ranking', path: '/ranking' },
     { label: 'Loja', path: '/loja' },
     { label: 'Sobre', path: '/sobre' },
-    { label: 'Suporte', path: '/suporte' }
+    { label: 'Suporte', path: '/support' }
   ];
 
   // activateItem(selectedItem: any): void {
