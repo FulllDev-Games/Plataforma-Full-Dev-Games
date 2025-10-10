@@ -88,6 +88,11 @@ h2{
     align-items: center;
     justify-content: center;
 }
+img{
+  width: 229px;
+  height: 229px;
+  border-radius: 4px;
+}
 .team-member__photo__icon{
   width: 85px;
   height: 85px;
