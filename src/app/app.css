@@ -21,6 +21,17 @@ main {
   padding: 12px;
   width: 807px;
   height: 100%;
+
+/*  SOMENTE PARA TESTE */
+
+section {
+    background-color: #161616;
+
+    width: 54%;
+    height: 50%;
+
+    margin: 30px 30px 0px 0px;
+    border-radius: 4px;
 }
 aside {
   background-color: #070707;

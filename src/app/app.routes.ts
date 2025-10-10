@@ -11,4 +11,16 @@ export const routes: Routes = [
     path: "sobre",
     component: About
   }
+import { Support } from './support/support';
+import { Main } from './main/main';
+
+export const routes: Routes = [
+    {
+        path: "",
+        component: Main
+    },
+    {
+        path: "support",
+        component: Support
+    }
 ];
