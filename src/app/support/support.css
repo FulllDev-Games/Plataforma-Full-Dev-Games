@@ -1,0 +1,43 @@
+section {
+    margin: 20px;
+    background-color: #1C1C1C;
+
+    border: 2px solid #1F1F1F;
+    border-radius: 4px;
+}
+
+header {
+    border-radius: 4px 4px 0px 0px;
+    background-color: #111111;
+}
+
+p {
+    line-height: 1.2rem;
+}
+
+h1, p, li {
+    margin-inline: 15px;
+    color: #989898;
+    font-size: 14px;
+}
+
+header>h1 {
+    margin-block: 0px;
+
+    padding-block: 15px;
+
+    font-weight: 500;
+}
+
+.ul-title {
+    margin-bottom: 1px;
+    color: #E9E9E9;
+}
+
+.text > ul {
+    margin-top: 5px;
+}
+
+.text > ul > li {
+    margin: 3px;
+}
