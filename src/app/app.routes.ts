@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: About
   },
   {
-    path: "support",
+    path: "suporte",
     component: Support
   }
 ];
