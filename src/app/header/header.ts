@@ -11,20 +11,11 @@ import { RouterModule } from '@angular/router';
 export class Header {
   // Array com os itens do menu de navegação
   menuItems = [
-    { label: 'Início', path: '/' }, // Item inicial ativo por padrão
+    { label: 'Início', path: '/' }, 
     { label: 'Minecraft', path: '/minecraft' },
     { label: 'Ranking', path: '/ranking' },
     { label: 'Loja', path: '/loja' },
     { label: 'Sobre', path: '/sobre' },
-    { label: 'Suporte', path: '/support' }
+    { label: 'Suporte', path: '/suporte' }
   ];
-
-  // activateItem(selectedItem: any): void {
-  //   // Cria um novo array para forçar a detecção de mudanças do Angular
-  //   // Ativa apenas o item clicado, desativando todos os outros
-  //   this.menuItems = this.menuItems.map(item => ({
-  //     ...item,
-  //     active: item === selectedItem
-  //   }));
-  // }
 }
