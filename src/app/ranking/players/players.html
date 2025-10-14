@@ -1,1 +1,31 @@
-<p>Testando players</p>
+<div>
+    <header>Top Players</header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th id="player-header">Player</th>
+                    <th id="wins-header">Wins</th>
+                    <th id="kills-header">Kills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of players">
+                    <td>
+                        <div class="player-info">
+                            <span>{{p.position}}</span>
+                            <img [src]="p.icon" alt="Player Icon" />
+                            <span>{{p.name}}</span>
+                        </div>
+                    </td>
+                    <td>
+                        {{p.wins}}
+                    </td>
+                    <td>
+                        {{p.kills}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>

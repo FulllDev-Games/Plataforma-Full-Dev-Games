@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+}
+
+#player-header {
+    width: 80%;
+}
+
+#wins-header {
+    width: 10%;
+}
+
+#kills-header {
+    width: 10%;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.player-info span {
+    padding: 5px;
+}
+
+.player-info img {
+    width: 28px;
+    height: 28px;
+
+    margin-inline: 1.5rem;
+}
