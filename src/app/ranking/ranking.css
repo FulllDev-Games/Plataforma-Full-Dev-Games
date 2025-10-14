@@ -1,0 +1,40 @@
+.login {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+.login input,
+.login button {
+    padding: 12px 16px;
+}
+
+.login input {
+    background-color: #696969;
+    border: 1px solid #1F1F1F;
+}
+
+.login input::placeholder {
+    color: #212529;
+}
+
+.login input:focus {
+    outline: none;
+    border: 1px solid #1F1F1F;
+}
+
+.login button {
+    color: #D6D6D6;
+    background-color: #B22D00;
+    border: 1px solid #7E2000;
+}
+
+.login p {
+    font-size: 12px;
+    color: #B22D00;
+    margin-top: 10px;
+}
+
+.form-server {
+    display: flex;
+    flex-direction: row;
+}
