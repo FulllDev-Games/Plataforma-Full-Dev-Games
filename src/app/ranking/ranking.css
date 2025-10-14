@@ -1,6 +1,5 @@
 .login {
     padding-inline: 2rem;
-    padding-block: 2rem;
 }
 
 .login input,
@@ -11,10 +10,11 @@
 .login input {
     background-color: #696969;
     border: 1px solid #1F1F1F;
+    margin-right: 10px;
 }
 
 .login input::placeholder {
-    color: #212529;
+    color: #4C4C4C;
 }
 
 .login input:focus {
@@ -34,7 +34,43 @@
     margin-top: 10px;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+    height: 4px;
+    background-color: #B22D00;
+
+    margin-top: 8px;
+    width: inherit;
+}
+
+.active {
+    border-bottom: 4px solid #B22D00;
+}
+
 .form-server {
     display: flex;
     flex-direction: row;
+}
+
+.ranking-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 5px;
+}
+
+a {
+    color: #D6D6D6;
+    text-decoration: none;
+    font-size: 13px;
+
+    padding-inline: 2rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 4px solid #1F1F1F;
 }

@@ -26,10 +26,13 @@ export const routes: Routes = [
       {
         path: "players",
         component: Players
-      }, 
+      },
       {
         path: "guild",
         component: Guild
+      },
+      { 
+        path: "", redirectTo: "players", pathMatch: "full" 
       }
     ]
   }
