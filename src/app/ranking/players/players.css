@@ -1,5 +1,50 @@
+header {
+    padding: 1rem;
+    margin-top: 0.9rem;
+
+    font-size: 12px;
+    color: #989898;
+    background-color: #111111;
+
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #1F1F1F;
+}
+
+main {
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #1F1F1F;
+    border-top: none;
+}
+
 table {
     width: 100%;
+
+    padding-block: 0.8rem;
+    padding-inline: 1rem;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    border-radius: 10rem;
+}
+
+main {
+    background-color: #1c1c1c;
+}
+
+#header-table {
+    background-color: #161616;
+}
+
+#player-header,
+#wins-header,
+#kills-header {
+    font-weight: normal;
+    font-size: 12px;
+    color: #989898;
+
+    background-color: #161616;
+    padding: 0.6rem;
 }
 
 #player-header {
@@ -14,18 +59,49 @@ table {
     width: 10%;
 }
 
+#kills-header {
+    padding-inline: 5rem
+}
+
 .player-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    margin-inline: 1rem;
+}
+
+tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #161616;
 }
 
 .player-info span {
+    font-family: 'Minecraft', sans-serif;
+
     padding: 5px;
+    width: 5px;
+    margin-right: 0.3rem;
+}
+
+.player-info span,
+.data {
+    color: #696969;
+    font-size: 14px;
+}
+
+.player-info p {
+    font-weight: lighter;
 }
 
 .player-info img {
     width: 28px;
     height: 28px;
 
-    margin-inline: 1.5rem;
+    margin-inline: 1rem;
+
+    border-radius: 0.4rem;
+}
+
+.data {
+    text-align: center;
 }
