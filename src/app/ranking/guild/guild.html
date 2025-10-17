@@ -1,0 +1,26 @@
+<div>
+    <header>Top Guilds</header>
+    <main>
+        <table>
+            <thead>
+                <tr id="header-table">
+                    <th id="guild-header">Guild</th>
+                    <th id="members-header">Members</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info" *ngFor="let g of guilds">
+                    <td>
+                        <div class="guild-info">
+                            <span>{{g.position}}</span>
+                            <p>{{g.name}}</p>
+                        </div>
+                    </td>
+                    <td class="data">
+                        {{g.members}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>

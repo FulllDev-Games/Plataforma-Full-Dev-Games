@@ -1,0 +1,22 @@
+<section>
+    <div class="ranking-tab">
+        <div class="links">
+            <a routerLink="players" routerLinkActive="active">Players</a>
+            <a routerLink="guild" routerLinkActive="active">Guild</a>
+        </div>
+        <div>
+            <div class="login">
+                <form class="form-server" action="">
+                    <input type="text" placeholder="Procurar um player">
+                    <button class="btn-img">
+                        <img src="assets/img/copy.png" alt="Ícone de cópia" width="16" height="16">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</section>
