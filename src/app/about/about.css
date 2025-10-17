@@ -6,11 +6,9 @@ section {
 }
 
 .section {
-    /* margin: 20px; */
     margin-bottom: 12px;
     background-color: #1C1C1C;
     box-shadow: inset 0 0 0 1px #1F1F1F;
-    /* Para bordar insider */
     border-radius: 4px;
     width: 783px;
 }
@@ -19,7 +17,6 @@ header {
     border-radius: 4px 4px 0px 0px;
     background-color: #111111;
     box-shadow: inset 0 0 0 1px #1F1F1F;
-    /* Para bordar insider */
 }
 
 header>h1 {
@@ -43,7 +40,6 @@ p {
 
 .staff-section {
     background-color: #161616;
-    /* margin: 20px; */
     border-radius: 0 0 4px 4px;
 }
 
@@ -51,7 +47,6 @@ h2 {
     color: #989898;
     font-size: 16px;
     font-weight: 700;
-    /* Bold */
     margin-bottom: 12px;
 }
 
@@ -64,7 +59,6 @@ h2 {
 .team-member {
     background-color: #1C1C1C;
     box-shadow: inset 0 0 0 1px #1F1F1F;
-    /* Para bordar insider */
     border-radius: 4px;
     width: 253px;
     height: 293px;

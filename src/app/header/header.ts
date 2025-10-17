@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 export class Header {
   // Array com os itens do menu de navegação
   menuItems = [
-    { label: 'Início', path: '/' }, 
+    { label: 'Início', path: '' }, 
     { label: 'Minecraft', path: '/minecraft' },
     { label: 'Ranking', path: '/ranking' },
     { label: 'Loja', path: '/loja' },

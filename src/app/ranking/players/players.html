@@ -1,0 +1,31 @@
+<div>
+    <header>Top Players</header>
+    <main>
+        <table>
+            <thead>
+                <tr id="header-table">
+                    <th id="player-header">Player</th>
+                    <th id="wins-header">Wins</th>
+                    <th id="kills-header">Kills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info" *ngFor="let p of players">
+                    <td class="card-player">
+                        <div class="player-info">
+                            <span>{{p.position}}</span>
+                            <img [src]="p.icon" alt="Player Icon" />
+                            <p>{{p.name}}</p>
+                        </div>
+                    </td>
+                    <td class="data">
+                        {{p.wins}}
+                    </td>
+                    <td class="data">
+                        {{p.kills}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>
