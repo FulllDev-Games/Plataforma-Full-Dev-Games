@@ -5,6 +5,30 @@
   src: url('assets/fonts/Minecraft.ttf') format('woff');
 }
 
+:root {
+    --dark-100: #1c1c1c;
+    --dark-200: #1a1a1a;
+    --dark-300: #161616;
+    --dark-400: #111111;
+    --dark-500: #0d0d0d;
+    --dark-600: #111111;
+    --dark-700: #070707;
+    --dark-800: #000000;
+
+    --gray-100: #989898;
+    --gray-200: #696969;
+    --gray-300: #4c4c4c;
+    --gray-400: #212529;
+
+    --orange-100: #ef8c00;
+    --orange-200: #b22d00;
+    --orange-300: #7e2000;
+
+    --white-100: #ffffff;
+    --white-200: #e9e9e9;
+    --white-300: #d6d6d6;
+}
+
 #root {
   padding: 0rem;
   margin: 0rem;

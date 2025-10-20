@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 footer {
-    background-color: #070707;
+    background-color: var(--dark-800);
 
     height: 173px;
     width: 100%;

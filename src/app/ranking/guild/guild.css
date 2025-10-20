@@ -4,7 +4,7 @@ header {
 
     font-size: 12px;
     color: #989898;
-    background-color: #111111;
+    background-color: var(--dark-600);
 
     border-radius: 5px 5px 0 0;
     border: 1px solid #1F1F1F;
@@ -29,20 +29,16 @@ table {
 }
 
 main {
-    background-color: #1c1c1c;
-}
-
-#header-table {
-    background-color: #161616;
+    background-color: var(--dark-100);
 }
 
 #guild-header,
 #members-header {
     font-weight: normal;
     font-size: 12px;
-    color: #989898;
+    color: var(--gray-100);
 
-    background-color: #161616;
+    background-color: var(--dark-300);
     padding: 0.6rem;
 }
 
@@ -64,7 +60,7 @@ main {
 }
 
 tbody tr:not(:last-child) td {
-    border-bottom: 1px solid #161616;
+    border-bottom: 1px solid var(--dark-500);
 }
 
 .guild-info span {
@@ -77,7 +73,7 @@ tbody tr:not(:last-child) td {
 
 .guild-info span,
 .data {
-    color: #696969;
+    color: var(--gray-200);
     font-size: 14px;
 }
 

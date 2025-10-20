@@ -8,13 +8,13 @@
 }
 
 .login input {
-    background-color: #696969;
+    background-color: var(--gray-200);
     border: 1px solid #1F1F1F;
     margin-right: 10px;
 }
 
 .login input::placeholder {
-    color: #4C4C4C;
+    color: var(--gray-300);
 }
 
 .login input:focus {
@@ -23,14 +23,14 @@
 }
 
 .login button {
-    color: #D6D6D6;
-    background-color: #B22D00;
-    border: 1px solid #7E2000;
+    color: var(--white-300);
+    background-color: var(--orange-200);
+    border: 1px solid var(--orange-300);
 }
 
 .login p {
     font-size: 12px;
-    color: #B22D00;
+    color: var(--orange-200);
     margin-top: 10px;
 }
 
@@ -41,14 +41,14 @@
 
 .line {
     height: 4px;
-    background-color: #B22D00;
+    background-color: var(--orange-200);
 
     margin-top: 8px;
     width: inherit;
 }
 
 .active {
-    border-bottom: 4px solid #B22D00;
+    border-bottom: 4px solid var(--orange-200);
 }
 
 .form-server {
@@ -66,7 +66,7 @@
 }
 
 a {
-    color: #D6D6D6;
+    color: var(--white-300);
     text-decoration: none;
     font-size: 13px;
 
