@@ -1,59 +1,18 @@
-section {
-    margin: 0;
-    padding: 0;
-    width: 783px;
-    overflow: hidden;
-}
-
-.section {
-    /* margin: 20px; */
-    margin-bottom: 12px;
-    background-color: #1C1C1C;
-    box-shadow: inset 0 0 0 1px #1F1F1F;
-    /* Para bordar insider */
-    border-radius: 4px;
-    width: 783px;
-}
-
-header {
-    border-radius: 4px 4px 0px 0px;
-    background-color: #111111;
-    border: 1px solid #1F1F1F;
-}
-
-p {
-    line-height: 1.2rem;
-}
-
-h1,
-p,
 li {
-    margin-inline: 15px;
-    color: #989898;
-    font-size: 14px;
-}
-
-header>h1 {
-    margin-block: 0px;
-
-    padding-block: 15px;
-
-    font-weight: 500;
+  margin-inline: 15px;
+  color: #989898;
+  font-size: 14px;
 }
 
 .ul-title {
-    margin-bottom: 1px;
-    color: #E9E9E9;
+  margin-bottom: 1px;
+  color: #e9e9e9;
 }
 
-.text:last-child {
-    padding-bottom: 2px;
+.text > ul {
+  margin-top: 5px;
 }
 
-.text>ul {
-    margin-top: 5px;
-}
-
-.text>ul>li {
-    margin: 3px;
+.text > ul > li {
+  margin: 3px;
 }
