@@ -45,7 +45,7 @@ section {
 }
 
 .section {
-  background-color: #1c1c1c;
+  background-color: var(--dark-100);
   box-shadow: inset 0 0 0 1px #1f1f1f;
   border-radius: 4px;
   width: 783px;
@@ -53,13 +53,13 @@ section {
 
 .header {
   border-radius: 4px 4px 0px 0px;
-  background-color: #111111;
+  background-color:  var(--dark-400);
   box-shadow: inset 0 0 0 1px #1f1f1f;
 }
 
 .header__title {
   margin-inline: 15px;
-  color: #989898;
+  color: var(--gray-100);
   font-size: 14px;
   margin-block: 0px;
   padding-block: 15px;
@@ -69,7 +69,7 @@ section {
 .text__paragraph {
   line-height: 1.2rem;
   margin-inline: 15px;
-  color: #989898;
+  color: var(--gray-100);
   font-size: 14px;
 }
 
