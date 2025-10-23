@@ -26,7 +26,7 @@ export const routes: Routes = [
     component: PersonalData,
     children: [
       {
-        path:"pessoais",
+        path:"dados-pessoais",
         component: DadosPessoais
       },
       {

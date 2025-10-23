@@ -1,50 +1,16 @@
-section {
-  margin: 0;
-  padding: 0;
-  width: 783px;
-  overflow: hidden;
-}
-
-.section {
-  /* margin: 20px; */
-  margin-bottom: 12px;
-  background-color: #1c1c1c;
-  box-shadow: inset 0 0 0 1px #1f1f1f;
-  /* Para bordar insider */
-  border-radius: 4px;
-  width: 783px;
-}
-
-header {
-  border-radius: 4px 4px 0px 0px;
-  background-color: #111111;
-  box-shadow: inset 0 0 0 1px #1f1f1f; /* Para bordar insider */
-}
-
-header > h1 {
-  margin-block: 0px;
-  padding-block: 15px;
-  font-weight: 500;
-}
-
-h1 {
-  margin-inline: 15px;
-  color: #989898;
-  font-size: 14px;
-}
-
 h2 {
   color: #989898;
   font-size: 16px;
   font-weight: 700; /* Bold */
   margin-bottom: 12px;
 }
-
+.personal-data{
+  padding: 12px;
+}
 .personal-information {
   display: flex;
   align-items: center;
-  border: 1px solid #111111; /* Para bordar insider */
-  margin-left: 12px;
+  border-bottom: 1px solid #111111; /* Para bordar insider */
 }
 .personal-information__label {
   background-color: #4c4c4c;
@@ -75,5 +41,5 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 12px;
+  margin-top: 12px;
 }

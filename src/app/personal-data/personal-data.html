@@ -1,14 +1,19 @@
-<section>
+<section class="section-spacing">
   <div class="section">
     <header class="header">
       <h1 class="header__title">Menu</h1>
     </header>
-
     <div class="menu-links">
       <a routerLink="minha-conta" routerLinkActive="active">Minha conta</a>
       <a routerLink="dados-pessoais" routerLinkActive="active">Dados pessoais</a>
-      <a routerLink="alterar-email" routerLinkActive="active">Alterar senha</a>
+      <a routerLink="alterar-email" routerLinkActive="active">Alterar email</a>
+      <a routerLink="alterar-senha" routerLinkActive="active">Alterar senha</a>
     </div>
   </div>
+</section>
 
+<section>
+  <div class="section">
+    <router-outlet></router-outlet>
+  </div>
 </section>
