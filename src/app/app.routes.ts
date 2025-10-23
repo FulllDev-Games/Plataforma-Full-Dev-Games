@@ -2,9 +2,11 @@ import { Routes } from '@angular/router';
 import { Main } from './main/main';
 import { About } from './about/about';
 import { Support } from './support/support';
-import { Ranking } from './ranking/ranking';
-import { Players } from './ranking/players/players';
-import { Guild } from './ranking/guild/guild';
+import { PersonalData } from './personal-data/personal-data';
+import { DadosPessoais } from './personal-data/menu/dados-pessoais/dados-pessoais';
+import { AlterarSenha } from './personal-data/menu/alterar-senha/alterar-senha';
+import { AlterarEmail } from './personal-data/menu/alterar-email/alterar-email';
+import { MinhaConta } from './personal-data/menu/minha-conta/minha-conta';
 
 export const routes: Routes = [
   {
@@ -20,19 +22,24 @@ export const routes: Routes = [
     component: Support
   },
   {
-    path: "ranking",
-    component: Ranking,
+    path: "dados",
+    component: PersonalData,
     children: [
       {
-        path: "players",
-        component: Players
+        path:"dados-pessoais",
+        component: DadosPessoais
       },
       {
-        path: "guild",
-        component: Guild
+        path: "alterar-senha",
+        component: AlterarSenha
       },
-      { 
-        path: "", redirectTo: "players", pathMatch: "full" 
+      {
+        path: "alterar-email",
+        component: AlterarEmail
+      },
+      {
+        path: "minha-conta",
+        component: MinhaConta
       }
     ]
   }

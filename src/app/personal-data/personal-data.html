@@ -1,40 +1,19 @@
-<section>
+<section class="section-spacing">
   <div class="section">
-    <header>
-        <h1>Menu</h1>
+    <header class="header">
+      <h1 class="header__title">Menu</h1>
     </header>
-    <div>
-        <nav class="nav">
-            <a *ngFor="let item of menuItems" class="nav__item"
-                [routerLink]="item.path"
-                routerLinkActive="nav__item--active"
-                [routerLinkActiveOptions]="{ exact: true }">
-                    {{item.label}}
-                </a>
-        </nav>
+    <div class="menu-links">
+      <a routerLink="minha-conta" routerLinkActive="active">Minha conta</a>
+      <a routerLink="dados-pessoais" routerLinkActive="active">Dados pessoais</a>
+      <a routerLink="alterar-email" routerLinkActive="active">Alterar email</a>
+      <a routerLink="alterar-senha" routerLinkActive="active">Alterar senha</a>
     </div>
   </div>
-
 </section>
+
 <section>
   <div class="section">
-    <header>
-        <h1>Dados pessoais</h1>
-    </header>
-    <div class="personal-data">
-        <div class="personal-information">
-            <p class="personal-information__label">Nome completo</p>
-            <p class="personal-information__value">Lucas Pedro</p>
-        </div>
-        <div class="personal-information">
-            <p class="personal-information__label">Data de nascimento</p>
-            <p class="personal-information__value">05/12/1996</p>
-        </div>
-        <div class="personal-information">
-            <p class="personal-information__label">Número de celular</p>
-            <p class="personal-information__value">(21) 9 9999-9999</p>
-        </div>
-        <div class="change-button">Alterar dados</div>
-    </div>
+    <router-outlet></router-outlet>
   </div>
 </section>
