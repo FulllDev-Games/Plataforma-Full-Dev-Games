@@ -119,6 +119,8 @@ form button img {
     background-color: var(--dark-400);
 
     padding: 0.5rem;
+
+    border: 1px solid #1f1f1f;
 }
 
 .modo span {
@@ -131,4 +133,30 @@ form button img {
 
 .modo img {
     width: 64px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#atualizacao {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.atualizacao-info {
+    padding: 0rem 1rem 1rem 1rem;
+    font-size: 14px;
+    color: var(--gray-100);
+}
+
+.atualizacao-info p {
+    margin-top: 0px;
+}
+
+.atualizacao-info p:last-child {
+    margin-bottom: 0px;
 }
