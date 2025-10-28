@@ -36,11 +36,11 @@
 }
 
 .text {
-    width: 50%;
+    width: 60%;
 }
 
 #gameplay {
-    width: 370px;
+    width: 425px;
 }
 
 .formulario form {
@@ -98,4 +98,37 @@ form button img {
     padding: 2px 6px;
     border-radius: 4px;
     white-space: nowrap;
+}
+
+.section {
+    margin-top: 1.5rem;
+}
+
+.modos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    padding: 1rem;
+}
+
+.modo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-400);
+
+    padding: 0.5rem;
+}
+
+.modo span {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    color: var(--gray-100);
+}
+
+.modo img {
+    width: 64px;
 }

@@ -22,4 +22,17 @@
             <img src="../../assets/img/gameplay.png" alt="Demonstração de gameplay" id="gameplay">
         </div>
     </div>
+
+    <div class="section">
+        <header class="header">
+            <h1 class="header__title">Modos de Jogo</h1>
+        </header>
+
+        <div class="modos">
+            <div *ngFor="let modo of modos" class="modo">
+                <span>{{modo.title}}</span>
+                <img src={{modo.image}} alt="">
+            </div>
+        </div>
+    </div>
 </main>
