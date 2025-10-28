@@ -7,6 +7,9 @@ import { DadosPessoais } from './personal-data/menu/dados-pessoais/dados-pessoai
 import { AlterarSenha } from './personal-data/menu/alterar-senha/alterar-senha';
 import { AlterarEmail } from './personal-data/menu/alterar-email/alterar-email';
 import { MinhaConta } from './personal-data/menu/minha-conta/minha-conta';
+import { Guild } from './ranking/guild/guild';
+import { Players } from './ranking/players/players';
+import { Ranking } from './ranking/ranking';
 
 export const routes: Routes = [
   {
@@ -26,7 +29,7 @@ export const routes: Routes = [
     component: PersonalData,
     children: [
       {
-        path:"dados-pessoais",
+        path: "dados-pessoais",
         component: DadosPessoais
       },
       {
@@ -40,6 +43,23 @@ export const routes: Routes = [
       {
         path: "minha-conta",
         component: MinhaConta
+      },
+    ]
+  },
+  {
+    path: "ranking",
+    component: Ranking,
+    children: [
+      {
+        path: "players",
+        component: Players
+      },
+      {
+        path: "guild",
+        component: Guild
+      },
+      {
+        path: "", redirectTo: "players", pathMatch: "full"
       }
     ]
   }
