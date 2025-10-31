@@ -1,0 +1,183 @@
+.servidor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-image: url('../../assets/img/dirt.png');
+
+    font-family: Minecraft, 'sans-serif';
+
+    height: 390px;
+    padding: 0 0.6rem 0 1.6rem;
+    gap: 1rem;
+
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+}
+
+.servidor h1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    margin-top: 0rem;
+}
+
+.servidor p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+#text-green {
+    color: #33b97a;
+}
+
+#text-red {
+    color: #a22900;
+}
+
+.text {
+    width: 60%;
+}
+
+#gameplay {
+    width: 425px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+#server {
+    background-color: var(--gray-200);
+    color: var(--dark-300);
+
+    font-family: Minecraft, 'sans-serif';
+
+    padding: 0.5rem;
+    padding-inline: 0.7rem;
+
+    border: 3px solid black;
+}
+
+button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    height: 38px;
+
+    border: 3px solid black;
+}
+
+button img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+}
+
+#copy {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-family: Minecraft, 'sans-serif';
+    font-weight: 500;
+    color: var(--white-100);
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.section {
+    margin-top: 1.5rem;
+}
+
+.modos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    padding: 1rem;
+}
+
+.modo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-400);
+
+    padding: 0.5rem;
+
+    border: 1px solid #1f1f1f;
+}
+
+.modo span {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    color: var(--gray-100);
+}
+
+.modo img {
+    width: 64px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#eventos {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.eventos-info {
+    padding: 0rem 1rem 1rem 1rem;
+    font-size: 14px;
+    color: var(--gray-100);
+}
+
+.eventos-info p {
+    margin-top: 0px;
+}
+
+.eventos-info p:last-child {
+    margin-bottom: 0px;
+}
+
+.atualizacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.atualizacao-item {
+    margin: 0px;
+}
+
+#atualizacao-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.7rem
+}
+
+#atualizacao-title {
+    font-size: 17px;
+    margin: 1.5rem 0rem 1rem 0rem;
+    color: var(--gray-100);
+}
+
+.header__title {
+    color: var(--gray-200);
+}

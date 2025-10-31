@@ -2,9 +2,14 @@ import { Routes } from '@angular/router';
 import { Main } from './main/main';
 import { About } from './about/about';
 import { Support } from './support/support';
-import { Ranking } from './ranking/ranking';
-import { Players } from './ranking/players/players';
+import { PersonalData } from './personal-data/personal-data';
+import { DadosPessoais } from './personal-data/menu/dados-pessoais/dados-pessoais';
+import { AlterarSenha } from './personal-data/menu/alterar-senha/alterar-senha';
+import { AlterarEmail } from './personal-data/menu/alterar-email/alterar-email';
+import { MinhaConta } from './personal-data/menu/minha-conta/minha-conta';
 import { Guild } from './ranking/guild/guild';
+import { Players } from './ranking/players/players';
+import { Ranking } from './ranking/ranking';
 
 export const routes: Routes = [
   {
@@ -20,6 +25,28 @@ export const routes: Routes = [
     component: Support
   },
   {
+    path: "dados",
+    component: PersonalData,
+    children: [
+      {
+        path: "dados-pessoais",
+        component: DadosPessoais
+      },
+      {
+        path: "alterar-senha",
+        component: AlterarSenha
+      },
+      {
+        path: "alterar-email",
+        component: AlterarEmail
+      },
+      {
+        path: "minha-conta",
+        component: MinhaConta
+      },
+    ]
+  },
+  {
     path: "ranking",
     component: Ranking,
     children: [
@@ -31,8 +58,8 @@ export const routes: Routes = [
         path: "guild",
         component: Guild
       },
-      { 
-        path: "", redirectTo: "players", pathMatch: "full" 
+      {
+        path: "", redirectTo: "players", pathMatch: "full"
       }
     ]
   }

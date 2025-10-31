@@ -13,8 +13,11 @@ h2 {
 
 .team-grid {
   display: grid;
-  grid-template-columns: 253px 253px 253px;
-  gap: 12px;
+  grid-template-columns: 263px 263px 263px;
+  gap: 20px;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .team-member {

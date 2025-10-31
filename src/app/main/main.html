@@ -1,1 +1,72 @@
-<p>main works!</p>
+<main>
+    <!-- servidor -->
+    <div class="servidor">
+        <div class="text">
+            <div>
+                <h1>Jogue no nosso servidor</h1>
+                <p>Abra o <span id="text-green">Minecraft</span>, vá em <span id="text-red">Multiplayer</span>, clique
+                    em "Adicionar servidor", digite um nome qualquer e cole o endereço do servidor no campo "Endereço do
+                    Servidor". Clique em "Concluído", selecione o servidor na lista e depois em "Entrar no servidor". Se
+                    for um link de convite de Realms, basta clicar no link que o jogo abre direto.</p>
+            </div>
+            <div class="formulario">
+                <p id="server">mc.fulldevgames.com.br</p>
+                <button>
+                    <img src="../../assets/img/button.png" alt="">
+                    <span id="copy">Copiar</span>
+                </button>
+            </div>
+        </div>
+        <div>
+            <img src="../../assets/img/gameplay.png" alt="Demonstração de gameplay" id="gameplay">
+        </div>
+    </div>
+
+    <!-- modos de jogo -->
+    <div class="section">
+        <header class="header">
+            <h1 class="header__title">Modos de Jogo</h1>
+        </header>
+
+        <div class="modos">
+            <div *ngFor="let modo of modos" class="modo">
+                <span>{{modo.title}}</span>
+                <img src={{modo.image}} alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- notícias -->
+    <div class="section">
+        <header class="header">
+            <h1 class="header__title">Eventos Recentes</h1>
+            <h1 class="header__title">19 de setembro de 2025</h1>
+        </header>
+
+        <img src="../../assets/img/update.png" alt="Atualização recente" id="eventos">
+
+        <div class="eventos-info">
+            <p>Olá!</p>
+            <p>Estamos encerrando a semana de atualizações de minijogos com uma atualização de Moradias que inclui
+                melhorias nos PNJs, algumas mudanças nas ações e várias outras melhorias! Continue lendo para saber mais
+                sobre o que está incluído nesta atualização!</p>
+        </div>
+    </div>
+
+    <!-- atualizações -->
+    <div>
+        <div>
+            <h1 id="atualizacao-title">Últimas atualizações</h1>
+        </div>
+
+        <div class="atualizacao">
+            <div *ngFor="let atualizacao of atualizacoes" class="section atualizacao-item">
+                <header class="header">
+                    <h1 class="header__title">{{atualizacao.title}}</h1>
+                    <h1 class="header__title">{{atualizacao.date}}</h1>
+                </header>
+                <img src={{atualizacao.image}} alt="" id="atualizacao-img">
+            </div>
+        </div>
+    </div>
+</main>

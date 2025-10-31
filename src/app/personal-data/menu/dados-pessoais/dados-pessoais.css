@@ -1,0 +1,45 @@
+h2 {
+  color: #989898;
+  font-size: 16px;
+  font-weight: 700; /* Bold */
+  margin-bottom: 12px;
+}
+.personal-data{
+  padding: 12px;
+}
+.personal-information {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #111111; /* Para bordar insider */
+}
+.personal-information__label {
+  background-color: #4c4c4c;
+  width: 184px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+.personal-information__value {
+  color: white;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 12px;
+}
+.change-button {
+  background-color: #b22d00;
+  width: 184px;
+  height: 38px;
+  box-shadow: inset 0 0 0 1px #7e2000; /* Para bordar insider */
+  color: #d6d6d6;
+  font-size: 12px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
