@@ -141,22 +141,50 @@ form button img {
     justify-content: space-between;
 }
 
-#atualizacao {
+#eventos {
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
 }
 
-.atualizacao-info {
+.eventos-info {
     padding: 0rem 1rem 1rem 1rem;
     font-size: 14px;
     color: var(--gray-100);
 }
 
-.atualizacao-info p {
+.eventos-info p {
     margin-top: 0px;
 }
 
-.atualizacao-info p:last-child {
+.eventos-info p:last-child {
     margin-bottom: 0px;
+}
+
+.atualizacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.atualizacao-item {
+    margin: 0px;
+}
+
+#atualizacao-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.7rem
+}
+
+#atualizacao-title {
+    font-size: 17px;
+    margin: 1.5rem 0rem 1rem 0rem;
+    color: var(--gray-100);
+}
+
+.header__title {
+    color: var(--gray-200);
 }

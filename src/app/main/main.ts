@@ -16,5 +16,12 @@ export class Main {
     { title: 'SkyBlox', image: '../../assets/img/modos-de-jogo/slybox.png' },
     { title: 'Mistérios', image: '../../assets/img/modos-de-jogo/misterios.png' },
     { title: 'Guerra de Clans', image: '../../assets/img/modos-de-jogo/clans.png' }
+  ];
+
+  atualizacoes = [
+    { title: 'Atualização de Habitação', date: '19/07/25', image: '../../assets/img/atualizacoes/housing.png' },
+    { title: 'Atualização Disasters', date: '15/07/25', image: '../../assets/img/atualizacoes/disasters.png' },
+    { title: 'Emblemas antigos', date: '10/07/2025', image: '../../assets/img/atualizacoes/sw.png' },
+    { title: 'Mudanças importantes e correções de bugs', date: '10/07/2025', image: '../../assets/img/atualizacoes/duels.png' }
   ]
 }

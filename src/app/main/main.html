@@ -1,4 +1,5 @@
 <main>
+    <!-- servidor -->
     <div class="servidor">
         <div class="text">
             <div>
@@ -23,6 +24,7 @@
         </div>
     </div>
 
+    <!-- modos de jogo -->
     <div class="section">
         <header class="header">
             <h1 class="header__title">Modos de Jogo</h1>
@@ -36,17 +38,37 @@
         </div>
     </div>
 
+    <!-- notícias -->
     <div class="section">
         <header class="header">
             <h1 class="header__title">Eventos Recentes</h1>
             <h1 class="header__title">19 de setembro de 2025</h1>
         </header>
 
-        <img src="../../assets/img/update.png" alt="Atualização recente" id="atualizacao">
+        <img src="../../assets/img/update.png" alt="Atualização recente" id="eventos">
 
-        <div class="atualizacao-info">
+        <div class="eventos-info">
             <p>Olá!</p>
-            <p>Estamos encerrando a semana de atualizações de minijogos com uma atualização de Moradias que inclui melhorias nos PNJs, algumas mudanças nas ações e várias outras melhorias! Continue lendo para saber mais sobre o que está incluído nesta atualização!</p>
+            <p>Estamos encerrando a semana de atualizações de minijogos com uma atualização de Moradias que inclui
+                melhorias nos PNJs, algumas mudanças nas ações e várias outras melhorias! Continue lendo para saber mais
+                sobre o que está incluído nesta atualização!</p>
+        </div>
+    </div>
+
+    <!-- atualizações -->
+    <div>
+        <div>
+            <h1 id="atualizacao-title">Últimas atualizações</h1>
+        </div>
+
+        <div class="atualizacao">
+            <div *ngFor="let atualizacao of atualizacoes" class="section atualizacao-item">
+                <header class="header">
+                    <h1 class="header__title">{{atualizacao.title}}</h1>
+                    <h1 class="header__title">{{atualizacao.date}}</h1>
+                </header>
+                <img src={{atualizacao.image}} alt="" id="atualizacao-img">
+            </div>
         </div>
     </div>
 </main>
