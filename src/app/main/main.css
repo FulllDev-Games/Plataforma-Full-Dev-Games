@@ -49,8 +49,9 @@
     gap: 0.2rem;
 }
 
-form input {
+#server {
     background-color: var(--gray-200);
+    color: var(--dark-300);
 
     font-family: Minecraft, 'sans-serif';
 
@@ -60,15 +61,7 @@ form input {
     border: 3px solid black;
 }
 
-form input::placeholder {
-    color: var(--gray-300);
-}
-
-form input:focus {
-    outline: none;
-}
-
-form button {
+button {
     position: relative;
     background: none;
     border: none;
@@ -80,7 +73,7 @@ form button {
     border: 3px solid black;
 }
 
-form button img {
+button img {
     max-width: 100%;
     max-height: 100%;
     object-fit: fill;
