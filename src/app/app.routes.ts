@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+
 import { Main } from './main/main';
 import { About } from './about/about';
 import { Support } from './support/support';
@@ -10,6 +11,7 @@ import { MinhaConta } from './personal-data/menu/minha-conta/minha-conta';
 import { Guild } from './ranking/guild/guild';
 import { Players } from './ranking/players/players';
 import { Ranking } from './ranking/ranking';
+import { AuthGuard } from '../auth/guards/auth.guard';
 
 export const routes: Routes = [
   {
@@ -27,6 +29,7 @@ export const routes: Routes = [
   {
     path: "dados",
     component: PersonalData,
+    canActivate: [AuthGuard],
     children: [
       {
         path: "dados-pessoais",
