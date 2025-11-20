@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
+import { Inject, Injectable, PLATFORM_ID } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
 
 import { LoginDTO } from "../models/login.dto";
 import { ProfileDTO } from "../models/profile.dto";
@@ -7,12 +8,16 @@ import { RegisterDTO } from "../models/register.dto";
 
 // qualquer lugar da aplicação pode acessar os métodos que serão criados nesse arquivo
 @Injectable({ providedIn: 'root' })
-    
+
 export class AuthService {
+
     private API_URL = 'http://localhost:5091/api/Auth';
 
     // utilizando uma instância HttpClient para conseguirmos fazer as requisições GET, POST, DELETE, etc
-    constructor(private http: HttpClient) { }
+    constructor(
+        private http: HttpClient,
+        @Inject(PLATFORM_ID) private platformId: Object // permite saber onde o código está rodando
+    ) { }
 
     login(data: LoginDTO) {
         // envia os dados e indica o que será retornado para a aplicação
@@ -34,15 +39,22 @@ export class AuthService {
     };
 
     setToken(token: string) {
-        localStorage.setItem('token', token)
+        if (isPlatformBrowser(this.platformId)) {
+            localStorage.setItem('token', token);
+        }
     };
 
     getToken() {
-        return localStorage.getItem('token')
+        if (isPlatformBrowser(this.platformId)) {
+            return localStorage.getItem('token')
+        }
+        return null;
     };
 
     logout() {
-        localStorage.removeItem('token')
+        if (isPlatformBrowser(this.platformId)) {
+            localStorage.removeItem('token')
+        }
     };
 
     isLogged() {
