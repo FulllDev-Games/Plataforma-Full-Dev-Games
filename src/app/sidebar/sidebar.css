@@ -63,6 +63,12 @@ p {
     color: #D6D6D6;
     background-color: #B22D00;
     border: 1px solid #7E2000;
+    cursor: pointer;
+}
+
+.login button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .login p {
