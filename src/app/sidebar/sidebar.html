@@ -7,10 +7,10 @@
         </div>
 
         <div class="login">
-            <form class="form-login" action="">
-                <input type="text" placeholder="Login">
-                <input type="password" placeholder="**********">
-                <button>Entrar</button>
+            <form class="form-login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="Email" formControlName="email">
+                <input type="password" placeholder="**********" formControlName="password">
+                <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
             </form>
             <p>Esqueci a senha</p>
         </div>
